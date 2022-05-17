@@ -1,3 +1,10 @@
 .App {
   text-align: center;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: gainsboro;
+  padding: 30px 10px;
+  margin-top: 20px;
 }

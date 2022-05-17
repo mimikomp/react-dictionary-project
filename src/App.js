@@ -8,8 +8,8 @@ function App() {
         <main>
           <Dictionary />
         </main>
-        <footer className="text-center">Coded by Cassidy</footer>
       </div>
+      <footer className="text-center">Coded by Cassidy</footer>
     </div>
   );
 }
