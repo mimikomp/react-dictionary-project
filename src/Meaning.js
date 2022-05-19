@@ -1,22 +1,24 @@
+import { render } from "@testing-library/react";
 import React from "react";
+import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
-  
   return (
     <div className="Meaning">
-      <h3 className="text-capitalize">{props.meaning.partOfSpeech}</h3>
+      <h4 className="text-capitalize">{props.meaning.partOfSpeech}</h4>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index}>
-            <p>
-              Definition: {""}
+            <span>
+              <strong> Definition: {""} </strong>
               {definition.definition}
               <br />
               <em>
-                Example: {""}
+                {definition.example ? "Example: " : null}
                 {definition.example}
               </em>
-            </p>
+              <Synonyms synonyms={definition.synonyms} />
+            </span>
           </div>
         );
       })}
