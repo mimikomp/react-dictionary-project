@@ -5,3 +5,22 @@ h1 {
 form {
   margin: 5px 5px;
 }
+
+input:focus-visible {
+  outline: none;
+}
+
+.dictionaryMain {
+  margin: 0 auto;
+  text-align: center;
+}
+.searchButton {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.searchButton img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}

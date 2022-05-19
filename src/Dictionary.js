@@ -14,6 +14,7 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
+    event.target.reset();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchResult}`;
     axios.get(apiUrl).then(handleApiResponse);
     // https://dictionaryapi.dev/
@@ -23,17 +24,40 @@ export default function Dictionary() {
     setSearchResult(event.target.value);
   }
 
-  return (
-    <div className="Dictionary">
-      <h1>DICTIONARY</h1>
-      <form onSubmit={search}>
-        <input
-          type="search"
-          onChange={handleSearchResultChange}
-          autoFocus="off"
-        />
-      </form>
-      <Results results={apiResults} />
-    </div>
-  );
+  if (apiResults) {
+    return (
+      <div className="Dictionary dictionaryResults">
+        <h1>DICTIONARY</h1>
+        <form onSubmit={search}>
+          <input
+            type="search"
+            onChange={handleSearchResultChange}
+            autoFocus="off"
+            placeholder="Search for a word"
+          />
+          <button type="submit" className="searchButton">
+            <img src="/img/search-icon.png" alt="search-icon" />
+          </button>
+        </form>
+        <Results results={apiResults} />
+      </div>
+    );
+  } else {
+    return (
+      <div className="Dictionary dictionaryMain">
+        <h1>DICTIONARY</h1>
+        <form onSubmit={search}>
+          <input
+            type="search"
+            onChange={handleSearchResultChange}
+            autoFocus="off"
+            placeholder="Search for a word"
+          />
+          <button type="submit" className="searchButton">
+            <img src="/img/search-icon.png" alt="search-icon" />
+          </button>
+        </form>
+      </div>
+    );
+  }
 }
