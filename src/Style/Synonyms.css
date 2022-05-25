@@ -1,20 +1,29 @@
 .Synonyms {
   margin: 0 1px;
 }
+
+.synonymsSection {
+  padding: 2px 2px !important;
+  text-align: center !important;
+  background-color: var(--brown-color) !important;
+}
 .synonymsTitle {
-  font-size: 14px;
-  max-width: fit-content !important;
-  width: fit-content !important;
-  padding: 0 4px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 2px;
 }
 
 .Synonyms .list {
-  display: inline;
-  margin-right: 3px;
+  margin-right: 0;
   padding: 4px 8px;
   border-radius: 10px;
   font-size: 12px;
-  max-width: fit-content !important;
+  margin-bottom: 5px;
+}
+
+.Synonyms ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Media Queries */
@@ -26,4 +35,5 @@
     margin-right: 5px;
     padding: 3px 8px;
   }
+ 
 }

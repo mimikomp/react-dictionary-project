@@ -4,6 +4,8 @@
   background-color: var(--blue-color);
   border: 8px solid var(--light-color);
   text-align: left;
+  width: 95% !important;
+  min-width: 60% !important;
 }
 
 .Results h2 {
@@ -42,7 +44,9 @@
     margin-top: 8px;
     padding: 5px 10px;
     border: 6px solid var(--light-color);
+    min-width: 80vw !important;
   }
+
   .Results h2 {
     margin-bottom: 0.25px;
     margin-right: 5px;
@@ -57,5 +61,11 @@
   .MeaningSection,
   .PhotosSection {
     padding: 6px 6px !important;
+  }
+  .left-column {
+    flex-direction: row;
+  }
+  .right-column {
+    flex-direction: row;
   }
 }
