@@ -25,15 +25,3 @@
   list-style: none;
   padding-left: 0;
 }
-
-/* Media Queries */
-@media (orientation: portrait) {
-  .synonymsTitle {
-    margin-right: 5px;
-  }
-  .Synonyms .list {
-    margin-right: 5px;
-    padding: 3px 8px;
-  }
- 
-}

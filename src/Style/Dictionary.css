@@ -11,7 +11,7 @@
   outline: 1px solid black;
 }
 
-.dictionaryImage {
+.Dictionary img {
   height: 110px;
   padding: 17px 10px;
 }
@@ -36,21 +36,18 @@
 /* SEARCH FORM */
 .Dictionary section {
   width: 80%;
-  min-width: 75vw;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 8px 0;
   border-radius: 30px;
 }
 
 .Dictionary form {
   width: 70%;
-  min-width: 70vw;
   margin: 0 auto;
 }
 
 .Dictionary input {
-  width: 60%;
-  min-width: 45vw;
+  width: 80%;
   height: 40px;
   padding: 6px 15px;
   background-color: var(--light-color);
@@ -84,50 +81,4 @@
   padding-right: 3px;
   vertical-align: text-bottom;
   color: var(--dark-color);
-}
-
-/* Meida Queries */
-@media (orientation: portrait) {
-  .Dictionary h1 {
-    font-size: 11vw;
-    letter-spacing: 2px;
-  }
-  .Dictionary h3 {
-    font-size: 3.5vw;
-  }
-  .Dictionary section {
-    width: auto;
-    margin: 0 auto;
-    min-width: 80vw;
-  }
-  .Dictionary form {
-    width: auto;
-    min-width: 80vw;
-    margin: 0 auto;
-  }
-
-  .Dictionary input {
-    width: auto;
-    min-width: 60vw;
-    height: 4vh;
-    padding: 4px 15px;
-    vertical-align: middle;
-  }
-  .Dictionary input::placeholder {
-    font-size: 3vw;
-  }
-
-  .searchButton {
-    width: auto;
-    min-width: 7vw;
-
-    height: 4vh;
-    vertical-align: middle;
-  }
-
-  .Dictionary button svg {
-    width: 15px;
-    height: 15px;
-    vertical-align: baseline;
-  }
 }
