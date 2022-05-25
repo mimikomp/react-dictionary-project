@@ -1,26 +1,84 @@
-h1 {
-  margin: 15px 5px;
-}
-
-form {
-  margin: 5px 5px;
-}
-
-input:focus-visible {
-  outline: none;
-}
-
-.dictionaryMain {
+.Dictionary {
   margin: 0 auto;
   text-align: center;
 }
-.searchButton {
-  background: transparent;
-  border: none;
-  outline: none;
+
+.DictionaryIcon {
+  background-color: var(--light-color);
+  width: 110px;
+  margin: 0 auto;
+  border-radius: 80px;
+  outline: 1px solid black;
 }
-.searchButton img {
+
+.Dictionary img {
+  height: 110px;
+  padding: 17px 10px;
+}
+
+.Dictionary h1 {
+  margin: 5px 5px;
+  font-size: 60px;
+  color: var(--yellow-color);
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.Dictionary h3 {
+  margin: 2px 5px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Source Code Pro", monospace;
+  color: var(--dark-color);
+}
+
+/* SEARCH FORM */
+.Dictionary section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px 0;
+  border-radius: 30px;
+}
+
+.Dictionary form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Dictionary input {
+  width: 80%;
+  height: 40px;
+  padding: 6px 15px;
+  background-color: var(--light-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.Dictionary input:focus-visible {
+  outline: none;
+  box-shadow: inset 0px 0px 18px -16px rgba(0, 0, 0, 0.9);
+}
+
+.Dictionary input::placeholder {
+  font-size: 15px;
+}
+
+.searchButton {
+  width: 45px;
+  height: 40px;
+  background: var(--light-color);
+  border: 1px solid var(--dark-color);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.Dictionary button svg {
   width: 20px;
   height: 20px;
-  object-fit: cover;
+  padding-right: 3px;
+  vertical-align: text-bottom;
+  color: var(--dark-color);
 }

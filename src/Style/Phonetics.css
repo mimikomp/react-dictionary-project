@@ -1,0 +1,29 @@
+.Phonetics {
+  margin: 7px 0;
+}
+
+.phoneticsText {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 2px;
+  font-style: italic;
+}
+
+.phoneticsAudio {
+  display: inline-block;
+}
+
+.phoneticsIcon {
+  width: 18px;
+  vertical-align: middle;
+  padding: 4px 4px;
+  border-radius: 10px;
+  background-color: var(--dark-color);
+  color: var(--pink-color);
+}
+
+.phoneticsIcon:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  transition: color 50ms ease-in-out;
+}

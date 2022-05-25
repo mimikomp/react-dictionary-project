@@ -1,9 +1,27 @@
+:root {
+  --dark-color: black;
+  --light-color: white;
+  --light-accent: #ddd;
+  --medium-color: grey;
+  --yellow-color: #f5dd81;
+  --pink-color: #dd636e;
+  --blue-color: #adc9fc;
+  --green-color: #bfe19f;
+}
+
 .App {
   margin: 0 auto;
+  background-color: var(--yellow-color);
+  padding: 15px 0;
+  border-radius: 20px;
+  margin: 10px 20px;
 }
 
 .container {
-  background-color: gainsboro;
-  padding: 30px 10px;
-  margin-top: 20px;
+  margin: 8px 0;
+  padding: 20px 10px;
+  background-color: #d1a578;
+  border: 10px solid white;
+  border-radius: 40px;
+  outline: 1px solid black;
 }

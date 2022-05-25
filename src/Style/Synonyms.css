@@ -1,0 +1,18 @@
+.Synonyms {
+  margin: 0 1px;
+}
+.synonymsTitle {
+  font-size: 14px;
+  max-width: fit-content !important;
+  width: fit-content !important;
+  padding: 0 4px;
+}
+
+.Synonyms .list {
+  display: inline;
+  margin-right: 3px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  max-width: fit-content !important;
+}

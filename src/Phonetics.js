@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
+import "./Style/Phonetics.css";
 
 export default function Phonetics(props) {
-  console.log(props.phonetic.audio);
   let audio = props.phonetic.audio;
 
   function playAudio() {
@@ -11,18 +11,22 @@ export default function Phonetics(props) {
     audioSound.play();
   }
 
-  return (
-    <div className="Phonetics">
-      <span className="phoneticsText">
-        {props.phonetic.text} {""}
-      </span>
-      {props.phonetic.audio ? (
-        <FontAwesomeIcon
-          icon={faVolumeHigh}
-          onClick={playAudio}
-          className="phonecticsIcon"
-        />
-      ) : null}
-    </div>
-  );
+  if (props.phonetic.text && props.phonetic.audio) {
+    return (
+      <div className="Phonetics">
+        <span className="phoneticsText">
+          {props.phonetic.text} {""}
+        </span>
+        <span className="phoneticsAudio">
+          <FontAwesomeIcon
+            icon={faVolumeHigh}
+            onClick={playAudio}
+            className="phoneticsIcon"
+          />
+        </span>
+      </div>
+    );
+  } else {
+    return null;
+  }
 }

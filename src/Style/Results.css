@@ -1,0 +1,36 @@
+.Results section {
+  margin-top: 10px;
+  padding: 6px 15px;
+  background-color: var(--pink-color);
+  border: 8px solid var(--light-color);
+  text-align: left;
+}
+
+.Results h2 {
+  margin-bottom: 1px;
+  line-height: 1;
+  text-align: left;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--light-color);
+  
+}
+
+.wordCol {
+  max-width: fit-content !important;
+  width: fit-content !important;
+}
+
+.phoneticCol {
+  max-width: fit-content !important;
+  width: fit-content !important;
+}
+.mainDefinition {
+  margin-top: -2px;
+}
+.MeaningSection {
+  padding: 8px 8px !important;
+  border: none !important;
+  background-color: var(--light-color) !important;
+}

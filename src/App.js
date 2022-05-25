@@ -1,15 +1,17 @@
+import React from "react";
 import "./Style/App.css";
+
+import "bootstrap/dist/css/bootstrap.css";
+
 import Dictionary from "./Dictionary";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <main>
-          <Dictionary />
-        </main>
+        <Dictionary />
       </div>
-      <footer className="text-center">Coded by Cassidy</footer>
+      
     </div>
   );
 }

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Style/Dictionary.css";
 import Results from "./Results";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary() {
   const [searchResult, setSearchResult] = useState("");
@@ -23,11 +25,18 @@ export default function Dictionary() {
   function handleSearchResultChange(event) {
     setSearchResult(event.target.value);
   }
-
-  if (apiResults) {
-    return (
-      <div className="Dictionary dictionaryResults">
-        <h1>DICTIONARY</h1>
+  return (
+    <div className="Dictionary">
+      <div className="DictionaryIcon">
+        <img
+          src="/img/dictionary-icon.png"
+          className="dictionaryImage"
+          alt="dictionary-logo"
+        ></img>
+      </div>
+      <h1>DICTIONARY</h1>
+      <h3>What word do you want to look up?</h3>
+      <section>
         <form onSubmit={search}>
           <input
             type="search"
@@ -36,28 +45,11 @@ export default function Dictionary() {
             placeholder="Search for a word"
           />
           <button type="submit" className="searchButton">
-            <img src="/img/search-icon.png" alt="search-icon" />
+            <FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon" />
           </button>
         </form>
-        <Results results={apiResults} />
-      </div>
-    );
-  } else {
-    return (
-      <div className="Dictionary dictionaryMain">
-        <h1>DICTIONARY</h1>
-        <form onSubmit={search}>
-          <input
-            type="search"
-            onChange={handleSearchResultChange}
-            autoFocus="off"
-            placeholder="Search for a word"
-          />
-          <button type="submit" className="searchButton">
-            <img src="/img/search-icon.png" alt="search-icon" />
-          </button>
-        </form>
-      </div>
-    );
-  }
+      </section>
+      {apiResults ? <Results results={apiResults} /> : null}
+    </div>
+  );
 }
