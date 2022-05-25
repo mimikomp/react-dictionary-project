@@ -1,4 +1,5 @@
 import React from "react";
+import Synonyms from "./Synonyms";
 import { Accordion } from "react-bootstrap";
 import "./Style/Meaning.css";
 
@@ -18,6 +19,12 @@ export default function Meaning(props) {
                   </div>
                   {definition.example ? (
                     <div className="example">Example: {definition.example}</div>
+                  ) : null}
+
+                  {definition.synonyms > [0] ? (
+                    <div className="synonyms">
+                      <Synonyms synonyms={definition.synonyms} />
+                    </div>
                   ) : null}
                 </div>
               );

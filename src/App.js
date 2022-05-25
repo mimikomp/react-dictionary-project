@@ -11,16 +11,6 @@ function App() {
       <div className="container">
         <Dictionary />
       </div>
-      <footer className="text-center">
-        <a
-          href="https://github.com/mimikomp/react-dictionary-project"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open-Sourced Code
-        </a>{" "}
-        by Cassidy Komp
-      </footer>
     </div>
   );
 }
