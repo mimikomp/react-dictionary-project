@@ -8,10 +8,16 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 export default function Dictionary() {
   const [searchResult, setSearchResult] = useState("");
   const [apiResults, setApiResults] = useState(null);
+  const [photos, setPhotos] = useState(null);
 
   function handleApiResponse(response) {
     setApiResults(response.data[0]);
     console.log(response.data[0]);
+  }
+
+  function handlePexelsResponse(response) {
+    console.log(response.data.photos);
+    setPhotos(response.data.photos);
   }
 
   function search(event) {
@@ -20,6 +26,12 @@ export default function Dictionary() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchResult}`;
     axios.get(apiUrl).then(handleApiResponse);
     // https://dictionaryapi.dev/
+
+    let pexelsApiKey =
+      "563492ad6f91700001000001db3d64fa71484485b40e8ba9e194159c";
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${searchResult}&per_page=6`;
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
   function handleSearchResultChange(event) {
@@ -42,14 +54,14 @@ export default function Dictionary() {
             type="search"
             onChange={handleSearchResultChange}
             autoFocus="off"
-            placeholder="Search for a word"
+            placeholder="Search for a word..."
           />
           <button type="submit" className="searchButton">
             <FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon" />
           </button>
         </form>
       </section>
-      {apiResults ? <Results results={apiResults} /> : null}
+      {apiResults ? <Results results={apiResults} photos={photos} /> : null}
     </div>
   );
 }

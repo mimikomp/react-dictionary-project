@@ -1,5 +1,6 @@
 .Phonetics {
-  margin: 7px 0;
+  margin: 2px 0;
+  text-align: start;
 }
 
 .phoneticsText {
@@ -16,14 +17,27 @@
 .phoneticsIcon {
   width: 18px;
   vertical-align: middle;
-  padding: 4px 4px;
+  padding: 5px 4px;
   border-radius: 10px;
   background-color: var(--dark-color);
-  color: var(--pink-color);
+  color: var(--blue-color);
 }
 
 .phoneticsIcon:hover {
   background-color: var(--dark-color);
   color: var(--light-color);
   transition: color 50ms ease-in-out;
+}
+
+/* Media Queries */
+@media (orientation: portrait) {
+  .phoneticsText {
+    font-size: 3.75vw;
+    margin-right: 0px;
+  }
+  .phoneticsIcon {
+    width: 3vw;
+    margin-right: 2vw;
+    padding: 5px 3px;
+  }
 }

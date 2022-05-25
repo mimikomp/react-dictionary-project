@@ -16,3 +16,14 @@
   font-size: 12px;
   max-width: fit-content !important;
 }
+
+/* Media Queries */
+@media (orientation: portrait) {
+  .synonymsTitle {
+    margin-right: 5px;
+  }
+  .Synonyms .list {
+    margin-right: 5px;
+    padding: 3px 8px;
+  }
+}
