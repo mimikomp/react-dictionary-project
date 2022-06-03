@@ -18,6 +18,7 @@
   border-radius: 10px;
   box-sizing: content-box;
   position: relative;
+  overflow: hidden;
 }
 
 .Dictionary h1 {
@@ -52,7 +53,7 @@
   margin: 0 auto;
 }
 
-.Dictionary input {
+.search-input {
   width: 60%;
   min-width: 45vw;
   height: 40px;
@@ -62,6 +63,7 @@
   border-radius: 20px;
   border-bottom-right-radius: 0 !important;
   border-top-right-radius: 0 !important;
+  overflow: hidden;
 }
 
 .Dictionary input:focus-visible {
@@ -110,23 +112,25 @@
     margin: 0 auto;
   }
 
-  .Dictionary input {
+  .search-input {
     width: auto;
     min-width: 60vw;
-    height: 4vh;
-    padding: 4px 15px;
-    vertical-align: middle;
+    height: 28px;
+    line-height: 28px;
+    padding: 1px 15px;
+    overflow: hidden;
   }
+
   .Dictionary input::placeholder {
-    font-size: 3vw;
+    font-size: 10px;
+    position: absolute;
+    padding-top: 6px;
   }
 
   .searchButton {
     width: auto;
     min-width: 7vw;
-
-    height: 4vh;
-    vertical-align: middle;
+    height: 28px;
   }
 
   .Dictionary button svg {

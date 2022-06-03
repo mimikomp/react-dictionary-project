@@ -55,6 +55,7 @@ export default function Dictionary() {
             onChange={handleSearchResultChange}
             autoFocus="off"
             placeholder="Search for a word..."
+            className="search-input"
           />
           <button type="submit" className="searchButton">
             <FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon" />
