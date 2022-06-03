@@ -9,11 +9,15 @@
   margin: 0 auto;
   border-radius: 80px;
   outline: 1px solid black;
+  box-sizing: content-box;
 }
 
 .dictionaryImage {
-  height: 110px;
+  height: 80px;
   padding: 17px 10px;
+  border-radius: 10px;
+  box-sizing: content-box;
+  position: relative;
 }
 
 .Dictionary h1 {
