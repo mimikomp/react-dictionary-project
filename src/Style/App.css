@@ -23,7 +23,7 @@
   padding: 20px 10px;
   background-color: #d1a578;
   border: 10px solid white;
-  border-radius: 40px;
+  border-radius: 30px;
   outline: 1px solid black;
   min-height: 85vh;
   display: flex;
@@ -43,5 +43,6 @@
     min-height: 85vh;
     display: flex;
     align-items: center;
+    border-radius: 10px;
   }
 }
