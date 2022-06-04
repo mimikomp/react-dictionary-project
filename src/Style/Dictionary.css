@@ -48,9 +48,10 @@
 }
 
 .Dictionary form {
-  width: 70%;
-  min-width: 70vw;
+  width: fit-content !important;
   margin: 0 auto;
+  outline: 1px solid black;
+  border-radius: 20px;
 }
 
 .search-input {
@@ -59,7 +60,7 @@
   height: 40px;
   padding: 6px 15px;
   background-color: var(--light-color);
-  border: 1px solid black;
+  border: none;
   border-radius: 20px;
   border-bottom-right-radius: 0 !important;
   border-top-right-radius: 0 !important;
@@ -78,8 +79,8 @@
   width: 45px;
   height: 40px;
   background: var(--light-color);
-  border: 1px solid black;
-
+  border: none;
+  border-left: 1px solid black;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   padding: 0;
@@ -105,11 +106,9 @@
   .search-section {
     width: auto;
     margin: 0 auto;
-    min-width: 80vw;
   }
   .Dictionary form {
     width: auto;
-    min-width: 80vw;
     margin: 0 auto;
   }
 
