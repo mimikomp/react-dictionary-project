@@ -117,30 +117,7 @@
   }
 
   .search-input {
-    width: auto;
     min-width: 60vw;
-    height: 4vh !important;
-    line-height: 1.75vh;
-    padding: 1px 15px;
     overflow: hidden;
-  }
-
-  .Dictionary input::placeholder {
-    font-size: 2.5vw;
-    padding-top: 2px;
-  }
-
-  .searchButton {
-    width: auto;
-    min-width: 7vw;
-    height: 4vh !important;
-    box-sizing: border-box !important;
-  }
-
-  .searchIcon {
-    width: auto;
-    height: 2vh;
-    overflow: hidden !important;
-    box-sizing: border-box !important;
   }
 }
