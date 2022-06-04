@@ -78,6 +78,7 @@
   height: 40px;
   background: var(--light-color);
   border: none;
+  margin-left: 20px;
 
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
