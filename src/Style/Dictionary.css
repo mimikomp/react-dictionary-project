@@ -40,8 +40,6 @@
 
 /* SEARCH FORM */
 .search-section {
-  width: 80%;
-  min-width: 75vw;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -54,8 +52,6 @@
 }
 
 .search-input {
-  width: 60%;
-  min-width: 45vw;
   height: 40px;
   padding: 6px 15px;
   background-color: var(--light-color);
