@@ -17,6 +17,10 @@
   margin: 10px 20px;
   min-height: 90vh;
 }
+.test-border {
+  outline: 1px solid black;
+  border-radius: 20px;
+}
 
 .dictionary-container {
   display: flex;
@@ -26,7 +30,6 @@
   background-color: #d1a578;
   border: 10px solid white;
   border-radius: 20px;
-  outline: 1px solid black;
 }
 
 /* Meida Queries */
