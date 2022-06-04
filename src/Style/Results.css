@@ -4,6 +4,7 @@
   background-color: var(--blue-color);
   border: 8px solid var(--light-color);
   text-align: left;
+  width: auto;
 }
 
 .Results h2 {
@@ -24,16 +25,23 @@
 .mainDefinition {
   margin-top: -2px;
 }
+
+.WordSection {
+  border-radius: 20px !important;
+}
+
 .MeaningSection {
   padding: 8px 8px !important;
   border: none !important;
   background-color: var(--light-color) !important;
+  border-radius: 20px !important;
 }
 
 .PhotosSection {
   padding: 8px 8px !important;
   border: none !important;
   background-color: var(--light-color) !important;
+  border-radius: 20px !important;
 }
 
 /* Media Queries */
@@ -45,7 +53,6 @@
   }
   .Results h2 {
     margin-bottom: 0.25px;
-    margin-right: 5px;
     font-size: 10vw;
   }
 

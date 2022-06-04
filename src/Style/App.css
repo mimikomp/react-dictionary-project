@@ -27,6 +27,7 @@
   border: 10px solid white;
   border-radius: 20px;
   box-shadow: 0 0 0 1px black;
+  min-width: 80vw;
 }
 
 /* Meida Queries */
@@ -39,7 +40,6 @@
     padding: 20px 10px;
     border: 8px solid white;
     min-height: 75vh;
-    max-height: 90vh;
     display: flex;
     align-items: center;
     border-radius: 15px;

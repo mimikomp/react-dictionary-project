@@ -10,7 +10,7 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
-        <section>
+        <section className="WordSection">
           <h2 className="wordCol">{props.results.word}</h2>
           <div className="row justify-content-start ms-1">
             {props.results.phonetics.map(function (phonetic, index) {
