@@ -57,9 +57,7 @@ export default function Dictionary() {
             placeholder="Search for a word..."
             className="search-input"
           />
-          <button type="submit" className="searchButton">
-            <FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon" />
-          </button>
+          
         </form>
       </div>
       {apiResults ? <Results results={apiResults} photos={photos} /> : null}
