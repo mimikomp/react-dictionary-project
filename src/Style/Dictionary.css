@@ -60,7 +60,6 @@ input[type="submit"],
   width: fit-content !important;
   margin: 0 auto;
   border: 1px solid black;
-  border-radius: 20px;
 }
 
 .search-input {
@@ -71,8 +70,6 @@ input[type="submit"],
   background-color: var(--light-color);
   border: none;
   border-radius: 0.25px;
-  border-bottom-left-radius: 20px !important;
-  border-top-left-radius: 20px !important;
 }
 
 .Dictionary input:focus-visible {
