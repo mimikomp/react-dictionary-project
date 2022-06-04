@@ -44,13 +44,12 @@
   min-width: 75vw;
   margin: 0 auto;
   padding: 20px 0;
-  border-radius: 30px;
 }
 
 .Dictionary form {
   width: fit-content !important;
   margin: 0 auto;
-  outline: 1px solid black;
+  border: 1px solid black;
   border-radius: 20px;
 }
 
@@ -61,9 +60,8 @@
   padding: 6px 15px;
   background-color: var(--light-color);
   border: none;
-  border-radius: 20px;
-  border-bottom-right-radius: 0 !important;
-  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-left-radius: 20px !important;
 }
 
 .Dictionary input:focus-visible {
@@ -80,7 +78,7 @@
   height: 40px;
   background: var(--light-color);
   border: none;
-  border-left: 1px solid black;
+
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   padding: 0;
