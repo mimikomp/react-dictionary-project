@@ -15,7 +15,7 @@
   padding: 15px 10px;
   border-radius: 20px;
   margin: 10px 20px;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 .container {
@@ -37,7 +37,8 @@
   .container {
     padding: 20px 10px;
     border: 8px solid white;
-    min-height: 85vh;
+    min-height: 75vh;
+    max-height: 90vh;
     display: flex;
     align-items: center;
     border-radius: 15px;
