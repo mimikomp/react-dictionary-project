@@ -18,7 +18,7 @@
   min-height: 90vh;
 }
 
-.dictionary-container {
+.container {
   display: flex;
   min-height: 85vh;
   padding: 20px 10px;

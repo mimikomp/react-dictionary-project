@@ -48,7 +48,7 @@ export default function Dictionary() {
       </div>
       <h1>DICTIONARY</h1>
       <h3>What word do you want to look up?</h3>
-      <section>
+      <div className="search-section">
         <form onSubmit={search}>
           <input
             type="search"
@@ -61,7 +61,7 @@ export default function Dictionary() {
             <FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon" />
           </button>
         </form>
-      </section>
+      </div>
       {apiResults ? <Results results={apiResults} photos={photos} /> : null}
     </div>
   );
