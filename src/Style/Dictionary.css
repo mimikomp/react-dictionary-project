@@ -62,6 +62,8 @@
   border: none;
   border-bottom-left-radius: 20px !important;
   border-top-left-radius: 20px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
 }
 
 .Dictionary input:focus-visible {
