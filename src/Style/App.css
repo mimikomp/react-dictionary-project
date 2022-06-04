@@ -12,32 +12,27 @@
 .App {
   margin: 0 auto;
   background-color: var(--yellow-color);
-  padding: 15px 0;
+  padding: 15px 10px;
   border-radius: 20px;
   margin: 10px 20px;
   min-height: 90vh;
 }
 
-.container {
-  margin: 8px 0;
+.dictionary-container {
+  display: flex;
+  min-height: 85vh;
   padding: 20px 10px;
+  align-items: center;
   background-color: #d1a578;
   border: 10px solid white;
   border-radius: 20px;
   outline: 1px solid black;
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
 }
 
 /* Meida Queries */
 @media (orientation: portrait) {
   .App {
     margin: 8px 8px;
-    padding: 15px 10px;
-    min-height: 90vh;
-    border-radius: 15px;
   }
   .container {
     padding: 20px 10px;

@@ -8,7 +8,7 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="dictionary-container">
         <Dictionary />
       </div>
     </div>
